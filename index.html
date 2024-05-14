@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars API</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Star Wars Data</h1>
+        <div class="text-center mb-4">
+            <button id="fetch-people" class="btn btn-primary">People</button>
+            <button id="fetch-planets" class="btn btn-secondary">Planets</button>
+            <button id="fetch-species" class="btn btn-success">Species</button>
+        </div>
+
+        <div class="text-center mb-4">
+            <select id="sort-options" class="custom-select w-25">
+                <option value="name">Sort by Name</option>
+                <option value="height">Sort by Height</option>
+            </select>
+        </div>
+
+        <div id="data-container" class="row"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
